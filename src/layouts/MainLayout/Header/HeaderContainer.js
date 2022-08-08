@@ -12,6 +12,7 @@ import {useLocation} from "react-router-dom";
 const HeaderContainer = () => {
     const path = useLocation().pathname
     const [nav, setNav] = useState(false)
+    const [scrollPosition, setScrollPosition] = useState(0);
 
 
     const menus = [
@@ -47,18 +48,37 @@ const HeaderContainer = () => {
         },
     ]
 
-    useEffect(() => {
-        path === "/" ? setNav(false) : setNav(true)
-    }, [path]);
+    useEffect(()=>{
+        window.addEventListener('scroll', updateScrollPosition);
+    },[]);
 
+    const updateScrollPosition = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    }
+
+    useEffect(()=>{
+        navBarEvent()
+    },[scrollPosition, path]);
+
+    const navBarEvent = () => {
+        if(path === "/" && scrollPosition > 70) {
+            setNav(true)
+        }
+
+        if(path === "/" && scrollPosition < 70) {
+            setNav(false)
+        }
+
+        if(path !== "/") {
+            setNav(true)
+        }
+    }
 
     return (
-        <Container style={{backgroundColor: nav ? "white" : "black"}}>
+        <Container style={{backgroundColor: nav ? "white" : "transparent"}}>
             {
                 nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path}/> :
-                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" bgColor="black"/>
-
-
+                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" bgColor="transparent"/>
             }
         </Container>
     );
