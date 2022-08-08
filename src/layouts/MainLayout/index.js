@@ -2,6 +2,7 @@ import React from 'react';
 import {Outlet} from "react-router-dom";
 
 import HeaderContainer from "./Header/HeaderContainer";
+import Footer from "./Footer/Footer";
 
 
 const MainLayout = () => {
@@ -9,7 +10,7 @@ const MainLayout = () => {
         <>
             <HeaderContainer />
             <Outlet />
-            <footer>풋터</footer>
+            <Footer />
         </>
     );
 };
