@@ -11,7 +11,11 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
-
+  
+  body{
+    font-family: "spoqa Han Sans", sans-serif;
+  }
+  
   input, textarea {
     -moz-user-select: auto;
     -webkit-user-select: auto;
