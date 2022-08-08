@@ -1,5 +1,6 @@
 import MainRoutes from "./routes";
 import GlobalStyles from "themes/GlobalStyles";
+import "./App.css"
 
 function App() {
   return (
