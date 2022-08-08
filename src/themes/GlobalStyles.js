@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
   
   body{
     font-family: "spoqa Han Sans", sans-serif;
+    overflow-x: hidden;
   }
   
   input, textarea {
