@@ -39,7 +39,7 @@ const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: ${props => props.bgColor || "white"};
+  background-color: ${props => props.bgColor || "transprent"};
   color: ${props => props.color || "#2f374d"};
   transition: all 0.5s;
 `

@@ -61,6 +61,7 @@ const Container = styled.footer`
   display: flex;
   justify-content: center;
   padding: 60px 0;
+  background-color: #f7f9fc;
 `
 const Inner = styled.div`
   max-width: 1400px;

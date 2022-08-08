@@ -77,8 +77,8 @@ const HeaderContainer = () => {
     return (
         <Container style={{backgroundColor: nav ? "white" : "transparent"}}>
             {
-                nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path}/> :
-                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" bgColor="transparent"/>
+                nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path} /> :
+                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" />
             }
         </Container>
     );
@@ -92,5 +92,6 @@ const Container = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 750;
 `
 
