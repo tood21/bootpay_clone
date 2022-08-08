@@ -6,27 +6,36 @@ import phone from "assets/images/Home/phone.svg"
 import laptop from "assets/images/Home/laptop.svg"
 
 import Button from "components/Button"
+import useScrollFadeIn from "hooks/useScrollFadeIn";
 
 const Section_PaymentLink = () => {
+    const phoneAnimation = useScrollFadeIn(1, 0, 'up');
+    const laptopAnimation = useScrollFadeIn(1, 0, 'up');
+    const textAnimation = useScrollFadeIn(1, 0, 'right');
+    const buttonAnimation = useScrollFadeIn(1, 0, 'right');
+    const titleAnimation = useScrollFadeIn(1.5, 0.2, 'none');
+
     return (
         <Section>
             <SectionInner>
                 <SectionTextContainer>
-                    <Title>
+                    <Title {...titleAnimation}>
                         부트페이로 <br/>
                         <span>결제 연동 하세요</span>
                     </Title>
-                    <Description>
+                    <Description {...textAnimation}>
                         소스코드 한 줄 연동<br />
                         모든 결제 시나리오 지원<br />
                         안정적인 서비스 운영 및 보안<br />
                         무료 통계 서비스 제공
                     </Description>
-                    <Button>관리자 페이지 체험하기</Button>
+                    <div {...buttonAnimation}>
+                        <Button >관리자 페이지 체험하기</Button>
+                    </div>
                 </SectionTextContainer>
                 <SectionImgContainer>
-                    <PhoneImg src={phone} alt="phone"  />
-                    <LapImg src={laptop} alt="laptop" />
+                    <PhoneImg {...phoneAnimation} src={phone} alt="phone"  />
+                    <LapImg {...laptopAnimation} src={laptop} alt="laptop" />
                 </SectionImgContainer>
             </SectionInner>
         </Section>
@@ -90,4 +99,6 @@ const LapImg = styled.img`
   width: 110%;
   left: 150px;
   top: 120px;
+  z-index: 290;
+
 `
