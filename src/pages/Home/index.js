@@ -5,6 +5,7 @@ import Section_PaymentLink from "./Section_PaymentLink";
 import Section_period from "./Section_period";
 import Section_support from "./Section_support"
 import Section_API from "./Section_API";
+import Section_Payment from "./Section_Payment";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Section_period />
             <Section_support />
             <Section_API />
+            <Section_Payment />
         </Container>
     );
 };
