@@ -9,11 +9,11 @@ import Button from "components/Button"
 import useScrollFadeIn from "hooks/useScrollFadeIn";
 
 const Section_PaymentLink = () => {
-    const phoneAnimation = useScrollFadeIn(1, 0, 'up');
-    const laptopAnimation = useScrollFadeIn(1, 0, 'up');
-    const textAnimation = useScrollFadeIn(1, 0, 'right');
-    const buttonAnimation = useScrollFadeIn(1, 0, 'right');
-    const titleAnimation = useScrollFadeIn(1.5, 0.2, 'none');
+    const phoneAnimation = useScrollFadeIn(2, 0, 'up');
+    const laptopAnimation = useScrollFadeIn(2, 0, 'up');
+    const textAnimation = useScrollFadeIn(2, 0, 'right');
+    const buttonAnimation = useScrollFadeIn(2, 0, 'right');
+    const titleAnimation = useScrollFadeIn(2, 0.2, 'none');
 
     return (
         <Section>

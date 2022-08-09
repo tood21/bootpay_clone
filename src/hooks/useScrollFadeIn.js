@@ -6,13 +6,13 @@ const useScrollFadeIn = (duration, delay, direction) => {
     const handleDirection = (name) => {
         switch (name) {
             case 'up':
-                return 'translate3d(0, 50%, 0)';
+                return 'translate3d(0, 10%, 0)';
             case 'down':
-                return 'translate3d(0, -50%, 0)';
+                return 'translate3d(0, -10%, 0)';
             case 'left':
-                return 'translate3d(50%, 0, 0)';
+                return 'translate3d(10%, 0, 0)';
             case 'right':
-                return 'translate3d(-50%, 0, 0)';
+                return 'translate3d(-10%, 0, 0)';
             case 'none':
                 return 'translate3d( 0, 0, 0)';
             default:
@@ -22,6 +22,9 @@ const useScrollFadeIn = (duration, delay, direction) => {
 
     const fadeAnimation = () => {
         const { current } = element;
+
+
+        current.style = undefined;
         current.style.transitionProperty = 'all';
         current.style.transitionDuration = `${duration}s`;
         current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';

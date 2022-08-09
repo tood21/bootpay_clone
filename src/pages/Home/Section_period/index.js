@@ -11,10 +11,10 @@ import useScrollFadeIn from "hooks/useScrollFadeIn";
 
 
 const Section_period = () => {
-    const tabletAnimation = useScrollFadeIn(1, 0, 'up');
-    const textAnimation = useScrollFadeIn(1, 0, 'right');
-    const buttonAnimation = useScrollFadeIn(1, 0, 'right');
-    const titleAnimation = useScrollFadeIn(1.5, 0.2, 'none');
+    const tabletAnimation = useScrollFadeIn(2, 0, 'up');
+    const textAnimation = useScrollFadeIn(2, 0, 'right');
+    const buttonAnimation = useScrollFadeIn(2, 0, 'right');
+    const titleAnimation = useScrollFadeIn(2, 0.2, 'none');
 
 
     return (
