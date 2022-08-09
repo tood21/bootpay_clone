@@ -38,5 +38,16 @@
     url("/src/assets/fonts/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Bold.otf") format('opentype')
 }
 
-
+.sr-only {
+    position: absolute; /* position: absolute/fixed 에서만 clip 속성 작동 */
+    margin: -1px; /* 부트스트랩에선 안씀 */
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden; /* overflow: visible 이면 clip 속성 작동 안됨 */
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%); /* H5BP에선 안씀 */
+}
 

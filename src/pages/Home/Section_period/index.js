@@ -19,6 +19,7 @@ const Section_period = () => {
 
     return (
         <Section>
+            <h3 className="sr-only">개발 기간 단축</h3>
             <SectionInner>
                 <SectionTextContainer>
                     <Title {...titleAnimation}>

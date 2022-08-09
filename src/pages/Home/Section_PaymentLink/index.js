@@ -17,6 +17,7 @@ const Section_PaymentLink = () => {
 
     return (
         <Section>
+            <h3 className="sr-only">결제 연동 소개</h3>
             <SectionInner>
                 <SectionTextContainer>
                     <Title {...titleAnimation}>

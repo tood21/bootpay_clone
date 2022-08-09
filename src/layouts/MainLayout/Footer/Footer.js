@@ -68,7 +68,7 @@ const Inner = styled.div`
   width: 100%;
 
 `
-const FooterTitle = styled.h2`
+const FooterTitle = styled.div`
   width: 100%;
 
   h2 {
