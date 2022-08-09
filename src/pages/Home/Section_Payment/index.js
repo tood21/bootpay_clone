@@ -74,7 +74,8 @@ const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  padding-top: 120px;
+  padding: 120px 5% 0;
+  
 `
 
 const ContentContainer = styled.div`

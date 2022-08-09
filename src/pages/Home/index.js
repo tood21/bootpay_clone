@@ -6,6 +6,7 @@ import Section_period from "./Section_period";
 import Section_support from "./Section_support"
 import Section_API from "./Section_API";
 import Section_Payment from "./Section_Payment";
+import Section_PG from "./Section_PG";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Section_support />
             <Section_API />
             <Section_Payment />
+            <Section_PG />
         </Container>
     );
 };
