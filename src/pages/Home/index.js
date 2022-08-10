@@ -9,6 +9,7 @@ import Section_Payment from "./Section_Payment";
 import Section_PG from "./Section_PG";
 import Section_analysis from "./Section_analysis";
 import Section_fee from "./Section_fee";
+import Section_link from "./Section_link";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <Section_PG />
             <Section_analysis />
             <Section_fee />
+            <Section_link />
         </Container>
     );
 };
