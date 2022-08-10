@@ -9,7 +9,7 @@ const Button = ({children}) => {
 
 export default Button;
 
-const StyledButton = styled.a`
+const StyledButton = styled.button`
   display: inline-block;
   color: white;
   cursor: pointer;

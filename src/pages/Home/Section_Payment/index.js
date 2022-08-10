@@ -104,7 +104,7 @@ const LogoImgContainter = styled.div`
 `
 
 
-const IconButton = styled.a`
+const IconButton = styled.button`
   display: inline-block;
   color: white;
   cursor: pointer;
