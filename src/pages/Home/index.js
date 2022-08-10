@@ -7,6 +7,7 @@ import Section_support from "./Section_support"
 import Section_API from "./Section_API";
 import Section_Payment from "./Section_Payment";
 import Section_PG from "./Section_PG";
+import Section_analysis from "./Section_analysis";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Section_API />
             <Section_Payment />
             <Section_PG />
+            <Section_analysis />
         </Container>
     );
 };
