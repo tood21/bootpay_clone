@@ -4,6 +4,7 @@ import styled from "styled-components";
 import bootpay_logo_gray from 'assets/images/MainLayout/bootpay_gray.svg'
 
 const Footer = () => {
+
     return (
         <Container>
             <Inner>
@@ -57,7 +58,6 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.footer`
-  margin-top: 200px;
   display: flex;
   justify-content: center;
   padding: 60px 0;
@@ -72,9 +72,13 @@ const FooterTitle = styled.div`
   width: 100%;
 
   h2 {
+    @media screen and (max-width: 900px) {
+      text-align: center;
+    }
     img {
       width: 100px;
       padding-bottom: 20px;
+      
     }
   }
 `
@@ -84,7 +88,11 @@ const ContactContainer = styled.div`
   color: #8a92a5;
   display: flex;
   line-height: 1.5;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    flex-wrap: wrap;
 
+  }
   strong {
     color: #8a92a5;
     font-size: 13px;
@@ -97,8 +105,17 @@ const ContactContainer = styled.div`
 const AddressInfo = styled.div`
   width: 50%;
   padding-top: 1.5rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    text-align: center;
+  }
 `
 
 const Contact = styled.div`
-  width: 25%
+  width: 25%;
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
 `
