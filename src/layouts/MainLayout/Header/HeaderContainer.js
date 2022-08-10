@@ -7,12 +7,15 @@ import bootpay_logo_dark from "assets/images/MainLayout/bootpay_logo_dark.svg"
 
 import Header from "./Header";
 import {useLocation} from "react-router-dom";
+import MobileHeader from "./MobileHeader";
 
 
 const HeaderContainer = () => {
     const path = useLocation().pathname
     const [nav, setNav] = useState(false)
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [showList, setShowList] = useState(false)
+
 
 
     const menus = [
@@ -80,6 +83,11 @@ const HeaderContainer = () => {
                 nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path} /> :
                     <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" />
             }
+
+            {
+                nav ? <MobileHeader menus={menus} logo={bootpay_logo_dark} path={path} showList={showList} setShowList={setShowList}  /> :
+                    <MobileHeader logo={showList ? bootpay_logo_dark:bootpay_logo_white} path={path} menus={menus} color={showList? "#2f374d" : "#fff"} showList={showList} setShowList={setShowList}  />
+            }
         </Container>
     );
 };
@@ -93,5 +101,6 @@ const Container = styled.header`
   top: 0;
   width: 100%;
   z-index: 750;
+  transition: all 1s;
 `
 
