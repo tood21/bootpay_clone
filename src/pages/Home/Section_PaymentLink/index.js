@@ -57,12 +57,21 @@ const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  
 `
 
 const SectionTextContainer = styled.div`
   color: #fff;
   width: calc(100% * (5/12));
   padding-bottom: 120px;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
 `
 const Title = styled.p`
   font-size: 50px;
@@ -84,6 +93,12 @@ const Description = styled.p`
 const SectionImgContainer = styled.div`
   width: calc(100% * (7/12));
   position: relative;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+  }
 `
 
 const PhoneImg = styled.img`
@@ -91,15 +106,24 @@ const PhoneImg = styled.img`
   width: 300px;
   z-index: 300;
   top: 40px;
+  @media screen and (max-width: 900px) {
+    left: 5%;
+    
+  }
   
   
 `
 const LapImg = styled.img`
   position: absolute;
-  width: 300px;
-  width: 110%;
+  width: 900px;
   left: 150px;
   top: 120px;
   z-index: 290;
+  @media screen and (max-width: 900px) {
+    width: auto;
+    height: 450px;
+    left: 20%;
+    
+  }
 
 `
