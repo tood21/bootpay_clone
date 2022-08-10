@@ -8,6 +8,7 @@ import bootpay_logo_dark from "assets/images/MainLayout/bootpay_logo_dark.svg"
 import Header from "./Header";
 import {useLocation} from "react-router-dom";
 import MobileHeader from "./MobileHeader";
+import {useMediaQuery} from "react-responsive";
 
 
 const HeaderContainer = () => {
@@ -15,7 +16,7 @@ const HeaderContainer = () => {
     const [nav, setNav] = useState(false)
     const [scrollPosition, setScrollPosition] = useState(0);
     const [showList, setShowList] = useState(false)
-
+    const isMobile = useMediaQuery({ maxWidth: 900 })
 
 
     const menus = [
@@ -77,17 +78,15 @@ const HeaderContainer = () => {
         }
     }
 
+
     return (
         <Container style={{backgroundColor: nav ? "white" : "transparent"}}>
-            {
-                nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path} /> :
-                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" />
-            }
-
-            {
+            {isMobile? (
                 nav ? <MobileHeader menus={menus} logo={bootpay_logo_dark} path={path} showList={showList} setShowList={setShowList}  /> :
                     <MobileHeader logo={showList ? bootpay_logo_dark:bootpay_logo_white} path={path} menus={menus} color={showList? "#2f374d" : "#fff"} showList={showList} setShowList={setShowList}  />
-            }
+            ):(                nav ? <Header menus={menus} logo={bootpay_logo_dark} path={path} /> :
+                    <Header menus={menus} logo={bootpay_logo_white} path={path} color="white" />
+            )}
         </Container>
     );
 };
