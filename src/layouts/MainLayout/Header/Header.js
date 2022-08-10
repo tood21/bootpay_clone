@@ -62,15 +62,16 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   font-size: 0.8125rem;
+  width: 50%;
+
 
 
   ul {
     display: flex;
-
+    justify-content: space-between;
+    width: 100%;
     li {
-      margin-right: 40px;
       
-
       a {
         line-height: 70px;
         cursor: pointer;
