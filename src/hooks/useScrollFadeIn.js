@@ -22,26 +22,34 @@ const useScrollFadeIn = (duration, delay, direction) => {
 
     const fadeAnimation = () => {
         const { current } = element;
+            current.style = undefined;
+            current.style.transitionProperty = 'all';
+            current.style.transitionDuration = `${duration}s`;
+            current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';
+            current.style.transitionDelay = `${delay}s`;
+            current.style.opacity = 1;
+            current.style.transform = 'translate3d(0, 0, 0)';
 
 
-        current.style = undefined;
-        current.style.transitionProperty = 'all';
-        current.style.transitionDuration = `${duration}s`;
-        current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';
-        current.style.transitionDelay = `${delay}s`;
-        current.style.opacity = 1;
-        current.style.transform = 'translate3d(0, 0, 0)';
     };
 
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
+        window.addEventListener("scroll",scrollEvent);
+
+        return () => {
+            window.removeEventListener("scroll",scrollEvent);
+        }
+    }, []);
+
+
+    const scrollEvent = () => {
             const currentScroll = window.scrollY;
             if (currentScroll >= 70) {
                 fadeAnimation();
             }
-        });
-    }, []);
+    }
+
 
     return {
         ref: element,
