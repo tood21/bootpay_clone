@@ -25,6 +25,12 @@ export default Section_APIList;
 
 const List = styled.ul`
   width: 20%;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 `
 
 const ListItem = styled.li`
@@ -36,7 +42,11 @@ const ListItem = styled.li`
   margin-bottom: 4px;
   border-radius: 5px;
   cursor: pointer;
-
+  @media screen and (max-width: 900px) {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+ 
   p {
     line-height: 1.6;
   }

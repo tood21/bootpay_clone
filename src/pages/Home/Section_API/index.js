@@ -38,6 +38,7 @@ const Section_API = () => {
             <h3 className="sr-only">개발자를 위한 API</h3>
             <SectionInner>
                 <SectionSide>
+                    <img src={conIcon} alt="아이콘"/>
                 </SectionSide>
                 <SectionContainer>
                     <SectionHeader>
@@ -62,24 +63,26 @@ export default Section_API;
 const Section = styled.section`
   width: 100%;
   background-color: #fff;
+  @media screen and (max-width: 900px) {
+    padding: 3%;
+  }
 `
 
 const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
 `
 
 
 const SectionSide = styled.div`
   width: 200px;
-
-  &::after {
-    content: "";
-    background: url(${conIcon}) center / 100%;
+  img{
     width: 80px;
     height: 80px;
-    position: absolute;
   }
 `
 const SectionContainer = styled.div`
@@ -105,12 +108,20 @@ const SectionHeader = styled.div`
 const SectionMain = styled.div`
   display: flex;
   margin-top: 50px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const CodeContainer = styled.div`
-  width: 80%;
+  width: 1000px;
   max-height: 500px;
   overflow: scroll;
   margin-right: 10%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+
+
+  }
 `
 
