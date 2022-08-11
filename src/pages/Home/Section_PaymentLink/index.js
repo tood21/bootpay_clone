@@ -49,8 +49,11 @@ export default Section_PaymentLink;
 
 const Section = styled.section`
   background: url(${BGimg}) no-repeat center / cover;
-  padding-top: 100px;
+  padding-top: 6.25rem;
   width: 100%;
+  @media screen and (max-width: 900px) {
+   padding-top: 70px;
+  }
 `
 
 const SectionInner = styled.div`
@@ -64,7 +67,7 @@ const SectionInner = styled.div`
 const SectionTextContainer = styled.div`
   color: #fff;
   width: calc(100% * (5/12));
-  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
   @media screen and (max-width: 900px) {
     width: 100%;
     justify-content: center;
@@ -74,18 +77,18 @@ const SectionTextContainer = styled.div`
   
 `
 const Title = styled.p`
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2;
   font-weight: 300;
-  padding-top: 120px;
+  padding-top: 7.5rem;
    > span {
      font-weight: 700;
    }
 `
 
 const Description = styled.p`
-  padding-top: 30px;
-  font-size: 17px;
+  padding-top: 1.875rem;
+  font-size: 1.06rem;
   line-height: 1.5;
   padding-bottom: 70px;
 `

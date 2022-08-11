@@ -27,24 +27,26 @@ const Section_period = () => {
                         <span>개발기간이 단축됩니다</span>
                     </Title>
                     <Description {...textAnimation}>
-                        <p>
-                            <IconContainer>
-                                <StyledFontAwesomeIcon icon={faCheck}/>
-                            </IconContainer>
-                            <span>PG 계약</span> 상관없이 즉시 개발
-                        </p>
-                        <p>
-                            <IconContainer>
-                                <StyledFontAwesomeIcon icon={faCheck}/>
-                            </IconContainer>
-                            <span>웹, 앱 SDK</span> 모두 지원
-                        </p>
-                        <p>
-                            <IconContainer>
-                                <StyledFontAwesomeIcon icon={faCheck}/>
-                            </IconContainer>
-                            소스코드 수준의 <span>기술지원</span>
-                        </p>
+                        <div>
+                            <p>
+                                <IconContainer>
+                                    <StyledFontAwesomeIcon icon={faCheck}/>
+                                </IconContainer>
+                                <span>PG 계약</span> 상관없이 즉시 개발
+                            </p>
+                            <p>
+                                <IconContainer>
+                                    <StyledFontAwesomeIcon icon={faCheck}/>
+                                </IconContainer>
+                                <span>웹, 앱 SDK</span> 모두 지원
+                            </p>
+                            <p>
+                                <IconContainer>
+                                    <StyledFontAwesomeIcon icon={faCheck}/>
+                                </IconContainer>
+                                소스코드 수준의 <span>기술지원</span>
+                            </p>
+                        </div>
                     </Description>
                     <div {...buttonAnimation}>
                         <Button >개발매뉴얼 바로가기</Button>
@@ -68,16 +70,25 @@ const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 3%;
 `
 
 const SectionTextContainer = styled.div`
   color: #2f374d;
   width: calc(100% * (5 / 12));
   padding-bottom: 120px;
+
+  @media screen and (max-width: 900px) {
+      width: 100%;
+    text-align: center;
+    padding-bottom: 80px;
+
+  }
 `
 
 const Title = styled.p`
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 1.2;
   font-weight: 300;
   padding-top: 80px;
@@ -89,11 +100,19 @@ const Title = styled.p`
 
 const Description = styled.div`
   padding-top: 30px;
-  font-size: 17px;
+  font-size: 1.06rem;
   line-height: 1.5;
   padding-bottom: 70px;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   p {
+    @media screen and (max-width: 900px) {
+      text-align: left;
+    }
     span {
       font-weight: 700;
     }
@@ -124,4 +143,8 @@ const Tablet = styled.img`
   position: absolute;
   top: 0;
   z-index: 280;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 `
