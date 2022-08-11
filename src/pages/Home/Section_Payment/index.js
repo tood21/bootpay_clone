@@ -69,17 +69,30 @@ const Section = styled.section`
   width: 100%;
   background-color: #f7f9fc;
   margin-top: 150px;
+  @media screen and (max-width: 900px) {
+    margin-top: 30px;
+  }
 `
 const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   padding: 120px 5% 0;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+
+  }
   
 `
 
 const ContentContainer = styled.div`
   width: 50%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-top: 30px;
+    max-width: 400px;
+  }
 
   strong {
     color: #555;
@@ -126,6 +139,12 @@ const IconButton = styled.button`
 `
 const ImgContainer = styled.div`
   padding-top: 35px;
+  img {
+    width: 80%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
 `
 
 const SecurityListContainer = styled.div`
@@ -133,6 +152,7 @@ const SecurityListContainer = styled.div`
   padding: 50px;
   max-width: 450px;
   margin-top: 40px;
+  
 
   ul {
     li {
