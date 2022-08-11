@@ -28,7 +28,7 @@ export default Section_link;
 const Section = styled.section`
   width: 100%;
   background-color: #4135bb;
-  padding: 50px 0 50px;
+  padding: 50px 3% 50px;
 `
 const SectionInner = styled.div`
   max-width: 1000px;
@@ -36,10 +36,18 @@ const SectionInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 900px){
+    flex-direction: column;
+  }
 `
 const TextContainer = styled.div`
   display: flex;
   width: 50%;
+  @media screen and (max-width: 900px){
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
   p {
     color: #fff;
     font-size: 1.25rem;

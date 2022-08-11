@@ -23,7 +23,7 @@ const useScrollFadeIn = (duration, delay, direction) => {
     const fadeAnimation = () => {
         const { current } = element;
             current.style = undefined;
-            current.style.transitionProperty = 'all';
+            current.style.transitionProperty = 'transform';
             current.style.transitionDuration = `${duration}s`;
             current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';
             current.style.transitionDelay = `${delay}s`;

@@ -16,6 +16,5 @@ export default App;
 
 const Container = styled.div`
 
-height: 200vh;
 
 `

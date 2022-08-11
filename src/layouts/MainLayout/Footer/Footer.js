@@ -60,7 +60,7 @@ export default Footer;
 const Container = styled.footer`
   display: flex;
   justify-content: center;
-  padding: 60px 0;
+  padding: 60px 3%;
   background-color: #f7f9fc;
 `
 const Inner = styled.div`

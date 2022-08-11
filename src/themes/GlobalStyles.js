@@ -11,6 +11,10 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  html, body {
+    overflow-x: hidden;
+
+  }
   
   html {
     @media screen and (max-width: 900px) {
@@ -21,7 +25,6 @@ const GlobalStyles = createGlobalStyle`
   
   body{
     font-family: "spoqa Han Sans", sans-serif;
-    overflow-x: hidden;
   }
   
   input, textarea {

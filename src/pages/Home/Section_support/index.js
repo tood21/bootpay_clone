@@ -60,9 +60,9 @@ export default Section_support;
 const Section = styled.section`
   width: 100%;
   background-color: #fff;
-  padding: 150px 0 170px;
+  padding: 150px 3% 170px;
   @media screen and (max-width: 900px) {
-    padding: 150px 0 30px;
+    padding: 150px 3% 30px;
 
   }
 `

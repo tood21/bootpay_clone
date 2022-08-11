@@ -98,6 +98,8 @@ const Container = styled.header`
   box-shadow: 0 4px 10px rgb(25 25 25 / 10%);
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 750;
   transition: all 1s;

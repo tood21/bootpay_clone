@@ -49,10 +49,13 @@ export default Section_PaymentLink;
 
 const Section = styled.section`
   background: url(${BGimg}) no-repeat center / cover;
-  padding-top: 6.25rem;
+  padding: 6.25rem 3% 0;
   width: 100%;
+
   @media screen and (max-width: 900px) {
    padding-top: 70px;
+
+
   }
 `
 
@@ -111,6 +114,8 @@ const PhoneImg = styled.img`
   top: 40px;
   @media screen and (max-width: 900px) {
     left: 5%;
+    width: 70%;
+    max-width: 300px;
     
   }
   
@@ -123,10 +128,16 @@ const LapImg = styled.img`
   top: 120px;
   z-index: 290;
   @media screen and (max-width: 900px) {
-    width: auto;
+    width: 150%;
+    height: 450px;
+    left: 0;    
+    
+  }
+  @media screen and (max-width: 700px) {
+    width: 150%;
     height: 450px;
     left: 20%;
-    
+
   }
 
 `

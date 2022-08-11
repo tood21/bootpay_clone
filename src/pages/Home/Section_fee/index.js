@@ -48,7 +48,11 @@ export default Section_fee;
 const Section = styled.section`
   width: 100%;
   background-color: #f7f9fc;
-  padding: 150px 0 180px;
+  padding: 150px 5% 180px;
+  @media screen and (max-width: 900px) {
+    padding: 80px 5% 30px;
+
+  }
 `
 const SectionInner = styled.div`
   max-width: 1000px;
@@ -56,11 +60,19 @@ const SectionInner = styled.div`
 `
 const ContentContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+ 
 `
 
 const Content = styled.div`
   text-align: center;
   width: calc(100% /3);
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    p {
+      font-size: 1rem;
+    }
+  }
   p {
     &:nth-child(2) {
       margin-top: 2rem;
@@ -111,7 +123,7 @@ const Description = styled.div`
   
     img {
       &:first-child {
-        width: 135px;
+        width: 8rem;
       }
       &:nth-child(4) {
         width: 20px;

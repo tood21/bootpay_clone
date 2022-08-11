@@ -114,6 +114,7 @@ const Title = styled.h3`
 const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
    li {
      padding: 30px;
      img{

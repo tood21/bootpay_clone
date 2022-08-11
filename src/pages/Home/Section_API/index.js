@@ -63,6 +63,7 @@ export default Section_API;
 const Section = styled.section`
   width: 100%;
   background-color: #fff;
+  padding: 3%;
   @media screen and (max-width: 900px) {
     padding: 3%;
   }
