@@ -12,6 +12,13 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
   
+  html {
+    @media screen and (max-width: 900px) {
+      font-size: 13px;
+    }
+  }
+  
+  
   body{
     font-family: "spoqa Han Sans", sans-serif;
     overflow-x: hidden;
