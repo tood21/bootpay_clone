@@ -64,9 +64,8 @@ const Container = styled.footer`
   background-color: #f7f9fc;
 `
 const Inner = styled.div`
-  max-width: 1400px;
+  max-width: 1000px;
   width: 100%;
-
 `
 const FooterTitle = styled.div`
   width: 100%;

@@ -41,6 +41,7 @@ const Section = styled.section`
   background-color: #fff;
   padding: 160px 5% 210px;
 `
+
 const SectionInner = styled.div`
   max-width: 1400px;
   margin: 0 auto;
