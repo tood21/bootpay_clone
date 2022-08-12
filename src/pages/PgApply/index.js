@@ -1,9 +1,10 @@
 import React from 'react';
+import Section_support from "./Section_support";
 
 const PgApply = () => {
     return (
         <div>
-            pg가입하기
+            <Section_support />
         </div>
     );
 };
