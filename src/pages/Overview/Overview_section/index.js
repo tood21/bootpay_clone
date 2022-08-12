@@ -7,6 +7,7 @@ import OverviewDescription from "./OverviewDescription";
 const Overview_section = ({data}) => {
     return (
         <Section bgColor={data.bgColor}>
+            <h3 className="sr-only">{data.title}</h3>
             <SectionInner layout={data.descriptionLeft}>
                 <OverviewDescription data={data} />
                 <ImgContainer>
