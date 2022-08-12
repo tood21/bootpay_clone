@@ -2,10 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 
 
-import icon from "assets/images/PgApply/section_support_icon.svg"
 
-const Content = ({data}) => {
-    const {titleSpan, title, text, list, descriptionUp,descriptionDown, img} = data
+const MobileContent = ({data}) => {
+    const {titleSpan, title, text, list, descriptionUp,descriptionDown} = data
 
     return (
         <ContentContainer>
@@ -23,30 +22,24 @@ const Content = ({data}) => {
                             ))}
                         </ul>
                     </ListContainer>
-                    <ImgContainer>
-                        <img src={img} alt={data.title}/>
-                    </ImgContainer>
                 </Comission>
+                <Description>
+                    <p>* {descriptionUp}</p>
+                    <p>* {descriptionDown}</p>
+                </Description>
             </div>
-            <Description>
-                <p>{descriptionUp}</p>
-                <p>{descriptionDown}</p>
-            </Description>
-
         </ContentContainer>
     );
 };
 
-export default Content;
+export default MobileContent;
 
 
 
 const ContentContainer = styled.div`
-  width: 50%;
+  width: 100%;
   padding: 0 20px 20px;
-  @media screen and (max-width: 1100px) {
-    width: 100%;
-  }
+  
   > div{
     
     &:first-child{
@@ -54,7 +47,10 @@ const ContentContainer = styled.div`
       background-color: #fff;
       padding: 20px 40px;
       margin-bottom: 20px;
-     
+      @media screen and (max-width: 1100px) {
+        padding: 20px;
+      }
+
       > p {
         &:first-child {
           font-size: 2.06rem;
@@ -85,10 +81,12 @@ const Comission = styled.div`
 
 
 const ListContainer = styled.div`
-  width: 50%;
+  width: 100%;
+  margin-bottom: 20px;
   ul {
     background-color: #f7f9fc;
     padding: 7px 20px;
+  
     
     li {
       display: flex;
@@ -105,39 +103,12 @@ const ListContainer = styled.div`
   }
 `
 
-const ImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
 
-  img {
-    width: 80%
-  }
-`
 
 const Description = styled.div`
-  background-color: #cafcfa;
-  padding: 4px 20px 8px 40px;
-  border-radius: 20px;
-  display: inline-block;
-  position: relative;
-  margin-left: 10px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: url(${icon});
-    left: 0;
-    top: 0;
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.33;
+    color: #8a92a5;
   }
-
-    p {
-      white-space: pre-wrap;
-      font-size: 0.85rem;
-      line-height: 1.73;
-      color: #4529e5;
-    }
   `

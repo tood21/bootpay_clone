@@ -33,8 +33,8 @@ const contentData = [
                 value: "2.7%"
             }
         ],
-        description: "국세청 기준으로, 6개월 단위로 매출 등급 조정 및 우대수수료가 적용됩니다.\n" +
-            "PG사마다 영중소 수수료 테이블은 다를 수 있습니다.",
+        descriptionUp: "국세청 기준으로, 6개월 단위로 매출 등급 조정 및 우대수수료가 적용됩니다.",
+        descriptionDown: "PG사마다 영중소 수수료 테이블은 다를 수 있습니다.",
         img: feeLeft
     }
     ,
@@ -64,8 +64,8 @@ const contentData = [
                 value: "20만원"
             }
         ],
-        description:"신규 가맹점의 경우 최초 1회 PG 가입비용이 발생합니다. (부트페이에게 지급)\n"+
-            "기존 PG 가맹자의 경우 재가맹 하셔야만 이용이 가능합니다.",
+        descriptionUp:"신규 가맹점의 경우 최초 1회 PG 가입비용이 발생합니다. (부트페이에게 지급)",
+        descriptionDown: "기존 PG 가맹자의 경우 재가맹 하셔야만 이용이 가능합니다.",
         img: feeRight
     }
 ]
