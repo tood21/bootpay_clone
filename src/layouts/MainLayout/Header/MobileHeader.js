@@ -93,7 +93,7 @@ const Nav = styled.nav`
   height: ${props => props.showList? "360px": "0"};
   box-shadow: 0 0 10px rgb(100 100 100 / 40%);
   overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
   ul {
     li {
       text-align: center;

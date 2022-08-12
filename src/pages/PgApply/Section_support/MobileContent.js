@@ -52,6 +52,7 @@ const ContentContainer = styled.div`
       }
 
       > p {
+        text-align: center;
         &:first-child {
           font-size: 2.06rem;
           line-height: 1.6;
