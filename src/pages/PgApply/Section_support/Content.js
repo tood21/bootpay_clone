@@ -15,8 +15,8 @@ const Content = ({data}) => {
                 <Comission>
                     <ListContainer>
                         <ul>
-                            {list.map((item) => (
-                                <li key={item.id}>
+                            {list.map((item, idx) => (
+                                <li key={idx}>
                                     <span>{item.title}</span>
                                     <span>{item.value}</span>
                                 </li>

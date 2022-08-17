@@ -99,6 +99,7 @@ const TitleContainer = styled.div`
     div {
       width: 100%;
       p {
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 20px;
       }
