@@ -119,7 +119,7 @@ const List = styled.ul`
      padding: 30px;
      img{
        height: 40px;
-       max-width: 120px;
+       width: 120px;
      }
    }
 `
