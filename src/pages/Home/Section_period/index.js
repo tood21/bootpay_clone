@@ -112,6 +112,7 @@ const Description = styled.div`
   p {
     @media screen and (max-width: 900px) {
       text-align: left;
+      margin-bottom: 10px;
     }
     span {
       font-weight: 700;
@@ -128,6 +129,7 @@ const IconContainer = styled.span`
   border-radius: 50%;
   margin-right: 10px;
 `
+
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     font-size: 14px;
   `

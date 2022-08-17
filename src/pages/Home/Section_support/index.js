@@ -75,6 +75,7 @@ const TitleContainer = styled.div`
   display: flex;
   width: 100%;
   
+  
 
   div {
     width: 50%;
@@ -88,23 +89,44 @@ const TitleContainer = styled.div`
       font-size: 2.375rem;
       line-height: 1.2;
 
+    
       &:nth-child(2) {
         font-weight: 300;
       }
+
+     
+
     }
 
   }
+
+  @media screen and (max-width: 1200px) {
+    div{
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  
+  
   @media screen and (max-width: 900px) {
     display: block;
     div {
       width: 100%;
       p {
-        font-size: 2rem;
         text-align: center;
         margin-bottom: 20px;
       }
       &:nth-child(2) {
         text-align: center;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    div{
+      p {
+        font-size: 1.5rem;
       }
     }
   }

@@ -45,6 +45,8 @@ const ListItem = styled.li`
   @media screen and (max-width: 900px) {
     padding: 15px;
     margin-bottom: 20px;
+    width: 20%;
+    justify-content: center;
   }
  
   p {

@@ -101,6 +101,9 @@ const Description = styled.div`
     font-size: 1.75rem;
     color: #2f374d;
     
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
     &:nth-child(3) {
       position: relative;
       &::after {

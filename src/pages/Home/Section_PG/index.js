@@ -97,7 +97,7 @@ export default Section_PG;
 const Section = styled.section`
   width: 100%;
   background-color: #f7f9fc;
-  padding-top: 100px;
+  padding: 100px 3% 50px;
 `
 const SectionInner = styled.div`
   max-width: 1100px;
@@ -114,12 +114,23 @@ const Title = styled.h3`
 const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
    li {
-     padding: 30px;
+     width: 20%;
+     padding: 25px;
+     text-align: center;
+     
+     @media all and (max-width: 768px) {
+       width: 25%;
+       padding: 15px;
+     }
+     
+     @media all and (max-width: 500px) {
+       width: 50%
+     }
+     
      img{
        height: 40px;
-       width: 120px;
+       width: 100px;
      }
    }
 `
