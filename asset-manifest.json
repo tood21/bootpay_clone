@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bootpay_clone/static/css/main.15bcd7c5.css",
-    "main.js": "/bootpay_clone/static/js/main.0b70c662.js",
+    "main.js": "/bootpay_clone/static/js/main.7a7e0040.js",
     "react-syntax-highlighter/refractor-core-import.js": "/bootpay_clone/static/js/react-syntax-highlighter/refractor-core-import.4207b0ac.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/bootpay_clone/static/js/react-syntax-highlighter_languages_refractor_abap.82ebac12.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/bootpay_clone/static/js/react-syntax-highlighter_languages_refractor_actionscript.92c363d4.chunk.js",
@@ -217,7 +217,7 @@
     "static/media/section_support_rightArrow.svg": "/bootpay_clone/static/media/section_support_rightArrow.dae5d13af0b614fe810f7e83ed975edb.svg",
     "static/media/section_Payment_securityIcon.svg": "/bootpay_clone/static/media/section_Payment_securityIcon.42c26a61c51a5798c1e7611db7be2fa7.svg",
     "main.15bcd7c5.css.map": "/bootpay_clone/static/css/main.15bcd7c5.css.map",
-    "main.0b70c662.js.map": "/bootpay_clone/static/js/main.0b70c662.js.map",
+    "main.7a7e0040.js.map": "/bootpay_clone/static/js/main.7a7e0040.js.map",
     "refractor-core-import.4207b0ac.chunk.js.map": "/bootpay_clone/static/js/react-syntax-highlighter/refractor-core-import.4207b0ac.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.82ebac12.chunk.js.map": "/bootpay_clone/static/js/react-syntax-highlighter_languages_refractor_abap.82ebac12.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.92c363d4.chunk.js.map": "/bootpay_clone/static/js/react-syntax-highlighter_languages_refractor_actionscript.92c363d4.chunk.js.map",
@@ -374,6 +374,6 @@
   },
   "entrypoints": [
     "static/css/main.15bcd7c5.css",
-    "static/js/main.0b70c662.js"
+    "static/js/main.7a7e0040.js"
   ]
 }
