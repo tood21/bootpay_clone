@@ -8,6 +8,7 @@ import Section_RegistrationProcess from "./Section_RegistrationProcess";
 const PgApply = () => {
     return (
         <div>
+            <h2 className="sr-only">PG가입하기</h2>
             <Section_support />
             <Section_alliance />
             <Section_process />
