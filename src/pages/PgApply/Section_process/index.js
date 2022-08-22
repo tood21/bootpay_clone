@@ -12,8 +12,9 @@ const Section_process = () => {
                     <h3><img src={bootpayLogo} alt="부트페이" /><span className="sr-only">부트페이</span>는 간편한 PG가입을 제공합니다</h3>
                     <p>신규/기존 가입자 누구나 손쉽게 가입할 수 있습니다.</p>
                 </Title>
+                <ProcessContainer />
+
             </SectionInner>
-            <ProcessContainer />
         </Section>
     );
 };
