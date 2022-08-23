@@ -1,9 +1,15 @@
 import React from 'react';
 
+import Banner from "./Banner";
+import Contents from "./Contents";
+import ReportSection from "./ReportSection";
+
 const Analytics = () => {
     return (
         <div>
-            데이터 분석
+            <Banner />
+            <Contents />
+            <ReportSection />
         </div>
     );
 };
