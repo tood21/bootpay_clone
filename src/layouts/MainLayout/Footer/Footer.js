@@ -62,6 +62,7 @@ const Container = styled.footer`
   justify-content: center;
   padding: 60px 3%;
   background-color: #f7f9fc;
+  border-top: solid 1px #dfe4ea;
 `
 const Inner = styled.div`
   max-width: 1000px;
