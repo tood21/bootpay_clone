@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
   html, body {
     overflow-x: hidden;
 
