@@ -11,7 +11,6 @@ const Accordion = ({ title, content, active }) => {
   const [isCollapse, setIsCollapse] = useState(false);
 
   const handleButtonClick = (e) => {
-    // e.stopPropagation();
     if (parentRef.current === null || childRef.current === null) {
       return;
     }
