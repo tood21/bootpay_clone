@@ -1,20 +1,20 @@
-import React from 'react';
-import Section_support from "./Section_support";
+import React from "react";
 
-import Section_alliance from "./Section_alliance";
-import Section_process from "./Section_process";
-import Section_RegistrationProcess from "./Section_RegistrationProcess";
+import SectionRegistrationProcess from "./SectionRegistrationProcess";
+import SectionProcess from "./SectionProcess";
+import SectionAlliance from "./SectionAlliance";
+import SectionSupport from "./SectionSupport";
 
 const PgApply = () => {
-    return (
-        <div>
-            <h2 className="sr-only">PG가입하기</h2>
-            <Section_support />
-            <Section_alliance />
-            <Section_process />
-            <Section_RegistrationProcess />
-        </div>
-    );
+  return (
+    <div>
+      <h2 className="sr-only">PG가입하기</h2>
+      <SectionSupport />
+      <SectionAlliance />
+      <SectionProcess />
+      <SectionRegistrationProcess />
+    </div>
+  );
 };
 
 export default PgApply;
